@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next-JS Template Repository
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone this repo using one of the two ways:
+
+1. Using bash or other terminal
+
+   ```
+   git clone https://github.com/tapeds/nextjs-template.git
+   ```
+
+2. Using [Github Desktop](https://desktop.github.com/)
+
+### 2. Install dependencies
+
+It is encouraged to use **pnpm** so the husky hooks can work properly.
 
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Run the development server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start the server using this command:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+pnpm dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can start editing the page by modifying `src/index.page.tsx`.
 
-To learn more about Next.js, take a look at the following resources:
+## Commit Message Convention
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This website follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Commit message will be checked using [husky and commit lint](https://theodorusclarence.com/library/husky-commitlint-prettier), you can't commit if not using the proper convention below.
 
-## Deploy on Vercel
+### Format
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`<type>(optional scope): <description>`
+Example: `feat(pre-event): add speakers section`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 1. Type
+
+Available types are:
+
+- feat → Changes about addition or removal of a feature. Ex: `feat: add table on landing page`, `feat: remove table from landing page`
+- fix → Bug fixing, followed by the bug. Ex: `fix: illustration overflows in mobile view`
+- docs → Update documentation (README.md)
+- style → Updating style, and not changing any logic in the code (reorder imports, fix whitespace, remove comments)
+- chore → Installing new dependencies, or bumping deps
+- refactor → Changes in code, same output, but different approach
+- ci → Update github workflows, husky
+- test → Update testing suite, cypress files
+- revert → when reverting commits
+- perf → Fixing something regarding performance (deriving state, using memo, callback)
+- vercel → Blank commit to trigger vercel deployment. Ex: `vercel: trigger deployment`
+
+### 2. Optional Scope
+
+Labels per page Ex: `feat(pre-event): add date label`
+
+\*If there is no scope needed, you don't need to write it
+
+### 3. Description
+
+Description must fully explain what is being done.
+
+Add BREAKING CHANGE in the description if there is a significant change.
+
+**If there are multiple changes, then commit one by one**
+
+- After colon, there are a single space Ex: `feat: add something`
+- When using `fix` type, state the issue Ex: `fix: file size limiter not working`
+- Use imperative, and present tense: "change" not "changed" or "changes"
+- Don't use capitals in front of the sentence
+- Don't add full stop (.) at the end of the sentence
