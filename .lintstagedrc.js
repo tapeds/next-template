@@ -1,10 +1,10 @@
 module.exports = {
   // Type check TypeScript files
-  '**/*.(ts|tsx)': () => 'yarn typecheck',
+  '**/*.(ts|tsx)': () => 'pnpm typecheck',
 
   // Lint & Prettify TS and JS files
-  '**/*.(ts|tsx|js)': () => [`yarn lint:strict `, `yarn format:write`],
+  '**/*.(ts|tsx|js)': () => [`pnpm lint:strict `, `pnpm format:write`],
 
   // Prettify only Markdown and JSON files
-  '**/*.(md|json)': () => `yarn format:write`,
+  '**/*.(md|json)': () => `pnpm format:write`,
 };

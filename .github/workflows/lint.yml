@@ -19,11 +19,16 @@ jobs:
         with:
           node-version: 20
 
+      - name: 🤌 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@HEAD
+        run: pnpm install --frozen-lockfile
 
       - name: 🔬 Lint
-        run: yarn lint:strict
+        run: pnpm lint:strict
 
   typecheck:
     name: ʦ TypeScript
@@ -37,11 +42,16 @@ jobs:
         with:
           node-version: 20
 
+      - name: 🤌 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@HEAD
+        run: pnpm install --frozen-lockfile
 
       - name: 🔎 Type check
-        run: yarn typecheck
+        run: pnpm typecheck
 
   prettier:
     name: 💅 Prettier
@@ -55,8 +65,13 @@ jobs:
         with:
           node-version: 20
 
+      - name: 🤌 Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@HEAD
+        run: pnpm install --frozen-lockfile
 
       - name: 🔎 Type check
-        run: yarn format:check
+        run: pnpm format:check
