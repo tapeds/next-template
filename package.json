@@ -16,12 +16,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.32.0",
     "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "cssnano": "^6.0.3",
     "next": "14.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.2.2",
     "universal-cookie": "^7.1.0"
   },
