@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 
 import Providers from '@/app/providers';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
