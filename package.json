@@ -17,17 +17,23 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.32.0",
+    "@tanstack/react-table": "^8.16.0",
     "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "cssnano": "^6.0.3",
+    "immer": "^10.0.4",
     "next": "14.2.1",
+    "nuqs": "^1.17.1",
+    "object-to-formdata": "^4.5.1",
+    "query-string": "^9.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.3",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.1.0",
     "tailwind-merge": "^2.2.2",
-    "universal-cookie": "^7.1.0"
+    "universal-cookie": "^7.1.0",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
