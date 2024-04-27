@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
     "lint": "next lint",
     "lint:strict": "next lint --max-warnings 0",
@@ -21,6 +22,7 @@
     "clsx": "^2.1.0",
     "cssnano": "^6.0.3",
     "next": "14.2.1",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.3",
