@@ -52,6 +52,7 @@ export default function Typography<T extends React.ElementType>({
     <Component
       className={clsxm(
         // *=============== Font Type ==================
+        'text-black',
         [
           font === 'Inter' && [
             'font-inter',

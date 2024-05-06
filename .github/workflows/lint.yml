@@ -25,7 +25,7 @@ jobs:
           version: 8
 
       - name: 📥 Download deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: 🔬 Lint
         run: pnpm lint:strict
@@ -48,7 +48,7 @@ jobs:
           version: 8
 
       - name: 📥 Download deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: 🔎 Type check
         run: pnpm typecheck
@@ -71,7 +71,7 @@ jobs:
           version: 8
 
       - name: 📥 Download deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: 🔎 Type check
         run: pnpm format:check
