@@ -12,6 +12,8 @@
 
 2. By clicking use this template
 
+   ![image](https://github.com/tapeds/next-template/assets/111473015/37e9ec9c-cae4-4ccf-b048-f4bf195a6bb1)
+
 ### 2. Install dependencies
 
 It is encouraged to use **pnpm** so the husky hooks can work properly.
