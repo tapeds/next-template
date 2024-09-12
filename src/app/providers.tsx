@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
 import {
   QueryClient,
   QueryClientProvider,
   QueryOptions,
-} from '@tanstack/react-query';
-import { Toaster } from 'react-hot-toast';
+} from "@tanstack/react-query";
+import { Toaster } from "react-hot-toast";
 
-import api from '@/lib/api';
+import api from "@/lib/api";
 
 const defaultQueryFn = async ({ queryKey }: QueryOptions) => {
   const { data } = await api.get(`${queryKey?.[0]}`);
@@ -24,7 +24,7 @@ const queryClient = new QueryClient({
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
-      <Toaster position='top-center' />
+      <Toaster position="top-center" />
       {children}
     </QueryClientProvider>
   );

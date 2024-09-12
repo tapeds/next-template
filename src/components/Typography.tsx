@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
 
-import clsxm from '@/lib/clsxm';
+import clsxm from "@/lib/clsxm";
 
 export enum TypographyVariant {
   h1,
@@ -40,38 +40,38 @@ type TypographyProps<T extends React.ElementType> = {
 export default function Typography<T extends React.ElementType>({
   as,
   children,
-  weight = 'regular',
+  weight = "regular",
   className,
-  font = 'Inter',
-  variant = 'p',
+  font = "Inter",
+  variant = "p",
   ...props
 }: TypographyProps<T> &
   Omit<React.ComponentProps<T>, keyof TypographyProps<T>>) {
-  const Component = as || 'p';
+  const Component = as || "p";
   return (
     <Component
       className={clsxm(
         // *=============== Font Type ==================
-        'text-black',
+        "text-black",
         [
-          font === 'Inter' && [
-            'font-inter',
+          font === "Inter" && [
+            "font-inter",
             [
-              weight === 'regular' && 'font-normal',
-              weight === 'medium' && 'font-medium',
-              weight === 'bold' && 'font-bold',
+              weight === "regular" && "font-normal",
+              weight === "medium" && "font-medium",
+              weight === "bold" && "font-bold",
             ],
           ],
         ],
         // *=============== Font Variants ==================
         [
-          variant === 'h1' && ['md:text-[80px] md:leading-[96px]'],
-          variant === 'h2' && ['md:text-[72px] md:leading-[90px]'],
-          variant === 'h3' && ['md:text-[64px] md:leading-[84px]'],
-          variant === 'h4' && ['md:text-[48px] md:leading-[64px]'],
-          variant === 'h5' && ['md:text-[32px] md:leading-[48px]'],
-          variant === 'h6' && ['md:text-[24px] md:leading-[32px]'],
-          variant === 'p' && ['md:text-[18px] md:leading-[24px]'],
+          variant === "h1" && ["md:text-[80px] md:leading-[96px]"],
+          variant === "h2" && ["md:text-[72px] md:leading-[90px]"],
+          variant === "h3" && ["md:text-[64px] md:leading-[84px]"],
+          variant === "h4" && ["md:text-[48px] md:leading-[64px]"],
+          variant === "h5" && ["md:text-[32px] md:leading-[48px]"],
+          variant === "h6" && ["md:text-[24px] md:leading-[32px]"],
+          variant === "p" && ["md:text-[18px] md:leading-[24px]"],
         ],
         className,
       )}
