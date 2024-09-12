@@ -2,8 +2,8 @@
 
 import { FormProvider, useForm } from 'react-hook-form';
 
-import Input from '@/components/form/Input';
 import Typography from '@/components/Typography';
+import Input from '@/components/form/Input';
 
 export default function FormSandbox() {
   const methods = useForm();

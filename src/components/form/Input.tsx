@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { get, RegisterOptions, useFormContext } from 'react-hook-form';
+import { RegisterOptions, get, useFormContext } from 'react-hook-form';
 import { IconType } from 'react-icons';
 import { HiEye, HiEyeOff } from 'react-icons/hi';
 
+import Typography from '@/components/Typography';
 import ErrorMessage from '@/components/form/ErrorMessage';
 import HelperText from '@/components/form/HelperText';
 import LabelText from '@/components/form/LabelText';
-import Typography from '@/components/Typography';
 import clsxm from '@/lib/clsxm';
 
 export type InputProps = {

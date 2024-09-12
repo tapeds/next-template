@@ -1,10 +1,9 @@
-import * as React from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { BsArrowRight } from 'react-icons/bs';
 
+import Typography from '@/components/Typography';
 import Button from '@/components/buttons/Button';
 import ButtonLink from '@/components/links/ButtonLink';
-import Typography from '@/components/Typography';
 
 export default function ButtonPage() {
   return (

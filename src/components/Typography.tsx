@@ -3,29 +3,29 @@ import * as React from 'react';
 import clsxm from '@/lib/clsxm';
 
 export enum TypographyVariant {
-  'h1',
-  'h2',
-  'h3',
-  'h4',
-  'h5',
-  'h6',
-  'p',
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
 }
 
 enum FontVariant {
-  'Inter',
+  Inter,
 }
 
 enum FontWeight {
-  'thin',
-  'extralight',
-  'light',
-  'regular',
-  'medium',
-  'semibold',
-  'bold',
-  'extrabold',
-  'black',
+  thin,
+  extralight,
+  light,
+  regular,
+  medium,
+  semibold,
+  bold,
+  extrabold,
+  black,
 }
 
 type TypographyProps<T extends React.ElementType> = {
