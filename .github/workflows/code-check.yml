@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: ⬣ Biome
+    name: ⬣ Check
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
@@ -28,29 +28,8 @@ jobs:
       - name: 📥 Download deps
         run: pnpm install --frozen-lockfile
 
-      - name: 🔬 Check
+      - name: 🔬 Biome Check
         run: pnpm run check
-
-  typecheck:
-    name: ʦ TypeScript
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v4
-
-      - name: 🤌 Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
-
-      - name: ⎔ Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "pnpm"
-
-      - name: 📥 Download deps
-        run: pnpm install --frozen-lockfile
 
       - name: 🔎 Type check
         run: pnpm run typecheck
