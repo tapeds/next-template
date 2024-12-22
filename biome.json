@@ -7,7 +7,9 @@
     "indentWidth": 2,
     "lineEnding": "lf",
     "lineWidth": 80,
-    "attributePosition": "auto",
+    "attributePosition": "auto"
+  },
+  "files": {
     "ignore": [
       "**/.next",
       "**/node_modules",
