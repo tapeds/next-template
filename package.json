@@ -21,7 +21,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.32.0",
     "axios": "^1.8.4",
-    "clsx": "^2.1.0",
+    "clsx": "^2.1.1",
     "cssnano": "^6.0.3",
     "next": "14.2.1",
     "next-sitemap": "^4.2.3",
